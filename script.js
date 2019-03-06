@@ -7,9 +7,14 @@ let allPimples = document.querySelectorAll('.pimple')
 let max = 10;
 let active = true
 
+function gameInit(){
+    levelOne.style.display = 'block'
+    playAgainBtn.style.display = 'none'
+    manyPimples()
+}
+
 startButton.addEventListener('click', function () {
     startTimer(15)
-    gameInit()
 })
 
 function startTimer(seconds) {
@@ -54,10 +59,12 @@ const createPimple = function (max) {
     })
 }
 
-
-for (let i = 0; i < max; i++) {
-    createPimple(max)
+let manyPimples = function(){
+    for (let i = 0; i < max; i++) {
+        createPimple(max)
+    }
 }
+
 
 function checkWinLose() {
     allPopped = document.querySelectorAll('.popped')
@@ -66,7 +73,7 @@ function checkWinLose() {
         youWon()
     } else {
         youLose()
-    }
+    } gameRestart()
 }
 
 function youWon() {
@@ -77,15 +84,16 @@ function youLose() {
     resultMessage.innerHTML = 'Out of time'
 }
 
-function gameInit(){
-    levelOne.style.display = 'block'
-    playAgainBtn.style.display = 'none'
+function gameRestart(){
+    levelOne.style.display = 'none'
+    playAgainBtn.style.display = 'block'
+    resultMessage.remove()
 }
 
-// function restartGame(){
-//     for(let i=0; i <allPopped.length; i++){
-//         allPopped[i].remove()
-//     }
-// }
+playAgainBtn.addEventListener('click', function(){
+    gameInit()
+    createPimple()
+    startTimer(15)
+})
 
-
+gameInit()
