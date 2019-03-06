@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One');
+
 body,
 html {
   width: 100%;
@@ -14,9 +16,36 @@ html {
 .level-2{}
 
 .level-3{} */
-.start-button{
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+#start-button{
     width: 150px;
     height: 30px;
+    background-color: #E7747E;
+    color: black;
+    font-family: 'Fredoka One', cursive;
+    font-size: 14pt;
+    text-transform: uppercase;
+    border-color: black;
+    border-radius: 25px;
+}
+
+p{
+    color: black;
+    font-family: 'Fredoka One', cursive;
+    font-size: 14pt;
+}
+
+span{
+    width: 150px;
+    height: 30px;
+    background-color: bisque;
+    color: black;
+    font-family: 'Fredoka One', cursive;
+    font-size: 14pt;
 }
 
 .pimple {
@@ -29,5 +58,11 @@ html {
 }
 
 .popped {
-    
+    background-image: url(images/popped.png);
+}
+
+#result {
+    color: black;
+    font-family: 'Fredoka One', cursive;
+    font-size: 18pt;
 }

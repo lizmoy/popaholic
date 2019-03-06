@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-image: url(images/pattern541.jpg);
+  background-size: cover;
+  background-position: center;
+  image-rendering: optimizeSpeed;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -o-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: bicubic;
+  overflow: hidden;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.title{
+    font-family: 'Fredoka One', cursive;
+    font-size: 90pt;
+    text-transform: uppercase;
+}
+
+.instructions{
+    font-family: 'Josefin sans', sans-serif;
+    font-weight: bold;
+    font-size: 30pt;
+    color: black;
+}
+
+.button{
+    width: 150px;
+    height: 30px;
+    background-color: #98A2C7;
+    font-family: 'Fredoka One', cursive;
+    font-size: 14pt;
+    text-transform: uppercase;
+    border-color: black;
+    border-radius: 25px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
