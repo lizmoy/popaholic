@@ -9,11 +9,13 @@ html {
   background-size: cover;
   background-position: center;
 }
-/* .container{}
+/* .container{} */
 
-.level-1{}
+#level-1{
+    
+}
 
-.level-2{}
+/* .level-2{}
 
 .level-3{} */
 
@@ -65,4 +67,16 @@ span{
     color: black;
     font-family: 'Fredoka One', cursive;
     font-size: 18pt;
+}
+
+#replay-button {
+    width: 150px;
+    height: 30px;
+    background-color: #98A2C6;
+    color: black;
+    font-family: 'Fredoka One', cursive;
+    font-size: 14pt;
+    text-transform: uppercase;
+    border-color: black;
+    border-radius: 25px;
 }
