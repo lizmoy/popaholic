@@ -21,3 +21,5 @@ Find my wireframes and game proposal [here](https://drive.google.com/drive/folde
 * Preventing overlapping pimples
 * Adding more levels
 
+### Credits
+This game was made as part of General Assembly's Web Development Immersive
