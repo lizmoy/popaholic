@@ -1,7 +1,7 @@
 const startButton = document.querySelector('#start-button')
 let timerSpan = document.querySelector('#timer')
 let resultMessage = document.getElementById('result')
-const levelOne = document.querySelector('#level-1')
+const gamePage = document.querySelector('#level-1')
 const playAgainBtn = document.querySelector('#replay-button')
 const audio = new Audio('audio/Blop-Mark_DiAngelo-79054334.mp3')
 let allPopped = document.querySelectorAll('.popped')
@@ -14,7 +14,7 @@ let active = true
 let win = false
 
 function gameInit() {
-    levelOne.style.display = 'block'
+    gamePage.style.display = 'block'
     playAgainBtn.style.display = 'none'
     manyPimples()
 }
@@ -102,7 +102,7 @@ function youLose() {
 }
 
 function gameRestart() {
-    levelOne.style.display = 'none'
+    gamePage.style.display = 'none'
     playAgainBtn.style.display = 'block'
 }
 
