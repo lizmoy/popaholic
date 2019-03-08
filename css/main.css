@@ -38,6 +38,12 @@ html {
     text-transform: uppercase;
     border-color: black;
     border-radius: 25px;
+    opacity: 0.85;
+    transition: 0.3s;
+}
+
+#start-button:hover{
+    opacity: 1;
 }
 
 p{
@@ -53,10 +59,17 @@ span{
     color: black;
     font-family: 'Fredoka One', cursive;
     font-size: 14pt;
+    animation: pulse 1s infinite alternate;
+    border: none;
+    border-radius: 25px;
+    padding: 3px;
 }
 
-#face{
-    
+@keyframes pulse{
+    0%{border: none;}
+    50%{border: 1px solid #E7747E;}
+    80%{border: 2px solid #E7747E;}
+    100%{border: none;}
 }
 
 .pimple {
@@ -69,6 +82,12 @@ span{
 
 .popped {
     background-image: url(../images/popped.png);
+}
+
+
+.face{
+    width: 40%;
+    height: 40%;
 }
 
 #result {
@@ -87,4 +106,10 @@ span{
     text-transform: uppercase;
     border-color: black;
     border-radius: 25px;
+    opacity: 0.85;
+    transition: 0.3s;
+}
+
+#replay-button:hover {
+    opacity: 1;
 }
