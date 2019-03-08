@@ -6,7 +6,7 @@ const playAgainBtn = document.querySelector('#replay-button')
 const audio = new Audio('audio/Blop-Mark_DiAngelo-79054334.mp3')
 let allPopped = document.querySelectorAll('.popped')
 let allPimples = document.querySelectorAll('.pimple')
-let max = 15;
+let maxPimples = 15;
 let currentMax
 let timeCount = 15
 let currentTimeCount
@@ -74,8 +74,8 @@ const createPimple = function () {
 
 
 let manyPimples = function () {
-    currentMax = max
-    for (let i = 0; i < max; i++) {
+    currentMax = maxPimples
+    for (let i = 0; i < maxPimples; i++) {
         createPimple()
     }
 }

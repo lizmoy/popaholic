@@ -5,9 +5,10 @@ html {
     width: 100%;
     height: 100%;
     margin: 0;
-    background-color: bisque;
+    background-image: linear-gradient(to left bottom, #b76b52, #c3785e, #ce866a, #da9376, #e6a183, #ecab8c, #f2b695, #f8c09f, #fac9a7, #fbd2b0, #fddaba, #ffe3c4);
+    background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-attachment: fixed;
     display: flex;
     flex-flow: column wrap;
 }
@@ -48,7 +49,7 @@ p{
 span{
     width: 150px;
     height: 30px;
-    background-color: bisque;
+    background-image: #F6B495;
     color: black;
     font-family: 'Fredoka One', cursive;
     font-size: 14pt;
