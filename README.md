@@ -18,6 +18,6 @@ Find my wireframes and game proposal [here](https://drive.google.com/drive/folde
 ### Unsolved Problems
 * Changing the pimples from appearing automatically when the page loads to when the start button is clicked
 * Constraining randomized pimple placement to the area of a smaller div
-* Prevent overlapping pimples
+* Preventing overlapping pimples
 * Adding more levels
 
