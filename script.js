@@ -3,9 +3,10 @@ let timerSpan = document.querySelector('#timer')
 let resultMessage = document.getElementById('result')
 const levelOne = document.querySelector('#level-1')
 const playAgainBtn = document.querySelector('#replay-button')
+const audio = new Audio('audio/Blop-Mark_DiAngelo-79054334.mp3')
 let allPopped = document.querySelectorAll('.popped')
 let allPimples = document.querySelectorAll('.pimple')
-let max = 10;
+let max = 15;
 let currentMax
 let timeCount = 15
 let currentTimeCount
@@ -24,6 +25,7 @@ startButton.addEventListener('click', function () {
 
 function startTimer(seconds) {
     currentTimeCount = timeCount
+    timerSpan.innerText = "00:" + timeCount
     let timer = setInterval(function () {
         seconds -= 1
         currentTimeCount -= 1
@@ -39,7 +41,7 @@ function startTimer(seconds) {
             clearInterval(timer)
         }
         timerSpan.innerText = "00:" + seconds
-    }, 1000);
+    }, 1000)
 
     setTimeout(function () {
         clearInterval(timer)
@@ -58,6 +60,7 @@ const createPimple = function () {
 
     newPimple.addEventListener('click', popPimple = e => {
         newPimple.classList.add('popped')
+        audio.play()
         setTimeout(() => {
             newPimple.style.display = "none"
             currentMax -= 1
