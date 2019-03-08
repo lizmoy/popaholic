@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One');
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-image: linear-gradient(to left bottom, #b76b52, #c3785e, #ce866a, #da9376, #e6a183, #ecab8c, #f2b695, #f8c09f, #fac9a7, #fbd2b0, #fddaba, #ffe3c4);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#level-1{
+    width: 60%;
+    height: 60%;
+}
+
+#start-button{
+    width: 150px;
+    height: 30px;
+    background-color: #E7747E;
+    color: black;
+    font-family: 'Fredoka One', cursive;
+    font-size: 14pt;
+    text-transform: uppercase;
+    border-color: black;
+    border-radius: 25px;
+}
+
+p{
+    color: black;
+    font-family: 'Fredoka One', cursive;
+    font-size: 14pt;
+}
+
+span{
+    width: 150px;
+    height: 30px;
+    background-image: #F6B495;
+    color: black;
+    font-family: 'Fredoka One', cursive;
+    font-size: 14pt;
+}
+
+#face{
+    
+}
+
+.pimple {
+    position: absolute;
+    background-image: url(../images/pimple.png);
+    width: 110px;
+    height: 115px;
+    background-repeat: no-repeat;
+}
+
+.popped {
+    background-image: url(../images/popped.png);
+}
+
+#result {
+    color: black;
+    font-family: 'Fredoka One', cursive;
+    font-size: 18pt;
+}
+
+#replay-button {
+    width: 150px;
+    height: 30px;
+    background-color: #98A2C6;
+    color: black;
+    font-family: 'Fredoka One', cursive;
+    font-size: 14pt;
+    text-transform: uppercase;
+    border-color: black;
+    border-radius: 25px;
+}
